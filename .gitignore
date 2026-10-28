@@ -1,0 +1,31 @@
+/.vscode/
+__pycache__/
+/wandb/
+/build/
+.idea/
+/outputs/
+/multirun/
+/lightning_logs/
+/data_utils_fast.cpython*
+/*.log
+CLAUDE.md
+
+
+# Python virtual environment
+.venv/
+
+# Model checkpoints
+/checkpoints/
+/output/
+/outputs/
+*.pth
+*.pt
+*.ckpt
+
+# Vietnamese datasets
+/dataset/vivos/
+/datasets/raw/
+
+# Training logs
+/wandb/
+/lightning_logs/
