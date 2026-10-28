@@ -1,0 +1,15 @@
+/.vscode/
+__pycache__/
+/wandb/
+/build/
+.idea/
+/outputs/
+/multirun/
+/lightning_logs/
+/data_utils_fast.cpython*
+/*.log
+CLAUDE.md
+.venv
+dataset/vivos/
+dataset/vivos.tar.gz
+path/*.pth
