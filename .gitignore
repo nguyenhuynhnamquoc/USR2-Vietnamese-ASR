@@ -13,3 +13,23 @@ CLAUDE.md
 dataset/vivos/
 dataset/vivos.tar.gz
 path/*.pth
+
+
+# Python virtual environment
+.venv/
+
+# Model checkpoints
+/checkpoints/
+/output/
+/outputs/
+*.pth
+*.pt
+*.ckpt
+
+# Vietnamese datasets
+/dataset/vivos/
+/datasets/raw/
+
+# Training logs
+/wandb/
+/lightning_logs/
