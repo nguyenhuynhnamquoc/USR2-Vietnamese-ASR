@@ -7,7 +7,6 @@ numpy
 tqdm
 av
 mediapipe
-<<<<<<< HEAD
+
 sentencepiece>=0.2.0
-=======
->>>>>>> origin/main
+
