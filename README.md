@@ -341,6 +341,91 @@ Test CSVs:
 
 ## Data Preparation
 
+### Vietnamese ASR data preparation (VIVOS)
+
+Download the VIVOS files from the [AILAB-VNUHCM VIVOS dataset page](https://huggingface.co/datasets/AILAB-VNUHCM/vivos). You need the audio archive and both transcript prompt files:
+
+- [Audio archive (`vivos.tar.gz`, about 1.47 GB)](https://huggingface.co/datasets/AILAB-VNUHCM/vivos/resolve/main/data/vivos.tar.gz)
+- [Training transcripts (`prompts-train.txt.gz`)](https://huggingface.co/datasets/AILAB-VNUHCM/vivos/resolve/main/data/prompts-train.txt.gz)
+- [Test transcripts (`prompts-test.txt.gz`)](https://huggingface.co/datasets/AILAB-VNUHCM/vivos/resolve/main/data/prompts-test.txt.gz)
+
+Extract the archive and prompt files so the corpus has `train` and `test` directories under `dataset\vivos`, with each split containing `waves` and `prompts.txt`. The preparation script can validate the extracted corpus and regenerate the manifests:
+
+```powershell
+python preprocessing\prepare_vivos.py
+```
+
+By default, the script reads `dataset\vivos` and writes:
+
+- `dataset\manifests\train.tsv`
+- `dataset\manifests\validation.tsv`
+- `dataset\manifests\test.tsv`
+
+The script checks that each transcript has a matching mono 16 kHz WAV file. It holds out five speakers from the official training split for validation; the official test split is kept separate. Each TSV has `audio_path`, `text`, and `speaker_id` columns. Audio paths are relative to `dataset\vivos`. The default split contains 10,260 training utterances, 1,400 validation utterances, and 760 official test utterances.
+
+To use a different data location or hold out a different number of speakers:
+
+```powershell
+python preprocessing\prepare_vivos.py `
+  --vivos-root D:\datasets\vivos `
+  --output-dir D:\datasets\vivos-manifests `
+  --validation-speakers 5
+```
+
+### Train a tokenizer from VIVOS transcripts
+
+Install SentencePiece in the same Python environment used for this project, then train a 1,000-piece Unigram tokenizer using only the training transcripts:
+
+```powershell
+python -m pip install sentencepiece
+python preprocessing\train_vivos_tokenizer.py
+```
+
+The script reads `dataset\manifests\train.tsv` and writes `dataset\tokenizer\vivos_vi.model` and `dataset\tokenizer\vivos_vi.vocab`. It does not use validation or test transcripts.
+
+To verify the prepared tokenizer:
+
+```powershell
+python -c "import sentencepiece as spm; s=spm.SentencePieceProcessor(model_file='dataset/tokenizer/vivos_vi.model'); print('Vocabulary size:', s.get_piece_size()); print('Sample:', s.encode('KHÁCH SẠN', out_type=str))"
+```
+
+### Preparation status and training
+
+With the three manifests and both tokenizer files present, VIVOS is prepared for Vietnamese ASR experiments. `train_asr.py` provides an audio-only CTC training and evaluation path. It initializes the audio encoder from the Base+ English checkpoint by default, while creating a new output layer for the Vietnamese tokenizer. Only audio and transcript data are read; the official test manifest is not used during training.
+
+Activate the project virtual environment, then train:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python train_asr.py --epochs 30 --batch-size 2
+```
+
+By default, training uses `conf\model\backbone\resnet_transformer_baseplus.yaml` and initializes compatible encoder weights from `path\baseplus_high_resource_lrs3vox2.pth`. It writes the best validation checkpoint to `output\vivos_asr\best.pt` and a resumable checkpoint to `output\vivos_asr\last.pt`. The Base+ model is relatively large; a CUDA GPU is recommended. To train a smaller Base model from scratch, use:
+
+```powershell
+python train_asr.py `
+  --backbone-config conf\model\backbone\resnet_transformer_base.yaml `
+  --pretrained-checkpoint "" `
+  --batch-size 2
+```
+
+Evaluate the best checkpoint on the official test set only after model selection is complete:
+
+```powershell
+python train_asr.py `
+  --evaluate-only `
+  --checkpoint output\vivos_asr\best.pt `
+  --eval-manifest dataset\manifests\test.tsv
+```
+
+The reported WER splits text on spaces (Vietnamese syllable-level WER). This starter CTC recipe does not yet include language-model decoding, augmentation, or a scheduler. `main.py` remains the evaluator for the original audio-visual model and is not the entry point for this Vietnamese ASR recipe.
+
+To continue from the latest epoch, resume from `last.pt` and set `--epochs` to the desired total epoch count:
+
+```powershell
+python train_asr.py --resume output\vivos_asr\last.pt --epochs 40 --batch-size 2
+```
+
 <details>
 <summary><b>Full data preparation instructions (for batch evaluation)</b></summary>
 
@@ -353,6 +438,7 @@ Test CSVs:
 - [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html)
 - [AVSpeech](https://looking-to-listen.github.io/avspeech/)
 - [LibriSpeech](https://www.openslr.org/12)
+- [VIVOS (Vietnamese ASR)](https://huggingface.co/datasets/AILAB-VNUHCM/vivos)
 
 ### 2. Extract mouth ROIs
 

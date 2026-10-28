@@ -47,7 +47,7 @@ class E2E(torch.nn.Module):
 
         if ctc_rel_weight < 1.0:
             self.decoder = Decoder(
-                idim=1049,
+                idim=odim,
                 attention_dim=args.ddim,
                 attention_heads=args.dheads,
                 linear_units=args.dunits,
