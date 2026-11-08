@@ -1,5 +1,7 @@
 
 import math
+from pathlib import Path
+
 import torch
 import sentencepiece as spm
 
@@ -9,6 +11,7 @@ from models.vietnamese_ctc import load_pretrained_audio_encoder
 
 
 NEG_INF = float("-inf")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
 def logadd(a, b):
@@ -85,28 +88,28 @@ def beam_search(logits, beam_width=50, top_k=30):
 
 
 tokenizer = spm.SentencePieceProcessor(
-    model_file="dataset/tokenizer/vivos_vi.model"
+    model_file=str(PROJECT_ROOT / "dataset" / "tokenizer" / "vivos_vi.model")
 )
 
 dataset = VIVOSASRDataset(
-    "dataset/manifests/train.tsv",
-    "dataset/vivos",
-    "dataset/tokenizer/vivos_vi.model"
+    str(PROJECT_ROOT / "dataset" / "manifests" / "train.tsv"),
+    str(PROJECT_ROOT / "dataset" / "vivos"),
+    str(PROJECT_ROOT / "dataset" / "tokenizer" / "vivos_vi.model")
 )
 
 sample = dataset[0]
 
 model = make_model(
     tokenizer,
-    "conf/model/backbone/resnet_transformer_baseplus.yaml"
+    PROJECT_ROOT / "conf" / "model" / "backbone" / "resnet_transformer_baseplus.yaml"
 )
 
 load_pretrained_audio_encoder(
-    model, "../usr2-original/checkpoints/baseplus.pth"
+    model, PROJECT_ROOT / "path" / "baseplus_high_resource_lrs3vox2.pth"
 )
 
 head = torch.load(
-    "output/exp004/ctc_head_1000.pt",
+    PROJECT_ROOT / "output" / "exp004" / "ctc_head_1000.pt",
     map_location="cpu",
     weights_only=True,
 )
