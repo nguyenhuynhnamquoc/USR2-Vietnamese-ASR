@@ -479,3 +479,55 @@ Train a frozen-encoder CTC head on a fixed subset of 5–10 different Vietnamese
 Evaluate training recognition accuracy and compare with a separate, unseen validation subset.
 
 The experiment should assess whether the model learns useful audio-to-text mappings beyond memorizing a single training example.
+
+## EXP-008: Small-Subset Overfitting and Generalization Test
+
+**Status:** Implemented; awaiting execution
+**Objective:** Test whether a newly initialized CTC head can learn multiple VIVOS utterances with the encoder frozen, and compare performance on separate validation utterances.
+
+### 1. Experimental Setup
+
+| Parameter | Configuration |
+|---|---|
+| Encoder | USR 2.0 Base+ pretrained checkpoint, frozen |
+| CTC head | Newly initialized and trainable |
+| Training subset | 10 utterances sampled deterministically from the training manifest |
+| Validation subset | 10 separate utterances sampled deterministically from the validation manifest |
+| Random seed | 42 |
+| Optimizer | AdamW |
+| Learning rate | 0.001 |
+| Training steps | 1,000 |
+| Loss | CTC |
+| Evaluation metrics | CTC loss, word error rate, character error rate, exact-match rate, blank ratio |
+| Default device | CUDA when available; otherwise CPU |
+| Script | `scripts/exp008_multi_sample.py` |
+| Output directory | `output/exp008/` |
+
+The script selects the training and validation subsets independently, caches the frozen encoder features, and records the selected manifest indices for reproducibility. The validation subset is not used for optimization.
+
+Run from the repository root in PowerShell:
+
+```powershell
+python scripts\exp008_multi_sample.py
+```
+
+To explicitly run on the GPU or adjust the experiment size:
+
+```powershell
+python scripts\exp008_multi_sample.py `
+  --device cuda `
+  --train-samples 10 `
+  --validation-samples 10 `
+  --steps 1000 `
+  --seed 42
+```
+
+The script writes the trained CTC head to `output/exp008/ctc_head.pt`, summary metrics and selected indices to `output/exp008/summary.json`, and decoded train/validation examples to `output/exp008/predictions.csv`.
+
+### 2. Interpretation Criteria
+
+- If training WER and exact-match rate do not improve, inspect the token mapping, CTC alignment, gradients, and optimization before scaling up.
+- If training improves but validation remains poor, the result indicates that memorization does not yet transfer to the held-out utterances.
+- Improvement on both subsets is encouraging but is not a full-dataset result; the official test split remains reserved for final evaluation.
+
+No EXP-008 measurements have been recorded yet. Populate the results and analysis after running the script; do not treat the protocol or expected outputs as experimental findings.
