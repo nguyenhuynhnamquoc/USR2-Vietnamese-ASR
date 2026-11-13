@@ -18,7 +18,12 @@ from train_asr import decode_greedy, make_model, edit_distance
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Train a frozen-encoder CTC head on a small VIVOS subset."
+        description="Train a frozen-encoder CTC head on a VIVOS subset."
+    )
+    parser.add_argument(
+        "--experiment-id",
+        default="EXP-008",
+        help="Experiment label recorded in the output summary.",
     )
     parser.add_argument("--train-samples", type=int, default=10)
     parser.add_argument("--validation-samples", type=int, default=10)
@@ -344,7 +349,7 @@ def main():
                 writer.writerow({"split": split, **result})
 
     summary = {
-        "experiment": "EXP-008",
+        "experiment": args.experiment_id,
         "seed": args.seed,
         "device": str(device),
         "loaded_encoder_tensors": matched,
