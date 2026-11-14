@@ -20,7 +20,7 @@ path/*.pth
 
 # Model checkpoints
 /checkpoints/
-/output/
+/output/*.pt
 /outputs/
 *.pth
 *.pt

@@ -1,0 +1,104 @@
+{
+  "experiment": "EXP-012",
+  "training_performed": false,
+  "device": "cpu",
+  "validation_indices": [
+    39,
+    78,
+    100,
+    118,
+    125,
+    130,
+    157,
+    196,
+    197,
+    211,
+    219,
+    255,
+    263,
+    294,
+    314,
+    328,
+    339,
+    360,
+    372,
+    382,
+    556,
+    563,
+    585,
+    606,
+    757,
+    762,
+    769,
+    771,
+    792,
+    806,
+    885,
+    888,
+    928,
+    947,
+    1015,
+    1020,
+    1037,
+    1049,
+    1052,
+    1069,
+    1120,
+    1177,
+    1180,
+    1186,
+    1223,
+    1226,
+    1247,
+    1276,
+    1278,
+    1375
+  ],
+  "beam_width": 20,
+  "top_k": 20,
+  "results": {
+    "EXP-010 frozen encoder": {
+      "checkpoint": "D:\\HK252\\NCKH\\usr2_vietnam\\output\\exp010\\ctc_head.pt",
+      "mean_ctc_loss": 10.473737468936092,
+      "blank_argmax_ratio": 0.9800273597811218,
+      "mean_blank_probability": 0.9424260339071584,
+      "ctc_minimum_frame_violations": 0,
+      "decoding": {
+        "greedy": {
+          "wer": 0.9956896551724138,
+          "cer": 0.9461655662772981,
+          "exact_match": 0.0,
+          "empty_predictions": 17
+        },
+        "beam": {
+          "wer": 0.9935344827586207,
+          "cer": 0.941594718131031,
+          "exact_match": 0.0,
+          "empty_predictions": 14
+        }
+      }
+    },
+    "EXP-011 partial fine-tune": {
+      "checkpoint": "D:\\HK252\\NCKH\\usr2_vietnam\\output\\exp011\\partial_finetune.pt",
+      "mean_ctc_loss": 8.162594921725518,
+      "blank_argmax_ratio": 0.9882352941176471,
+      "mean_blank_probability": 0.9052829351046833,
+      "ctc_minimum_frame_violations": 0,
+      "decoding": {
+        "greedy": {
+          "wer": 0.9956896551724138,
+          "cer": 0.9639410868461148,
+          "exact_match": 0.0,
+          "empty_predictions": 24
+        },
+        "beam": {
+          "wer": 0.9956896551724138,
+          "cer": 0.9603859827323514,
+          "exact_match": 0.0,
+          "empty_predictions": 21
+        }
+      }
+    }
+  },
+  "predictions": "output\\exp012\\predictions.csv"
+}

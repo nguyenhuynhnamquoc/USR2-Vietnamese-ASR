@@ -11,33 +11,34 @@ from models.vietnamese_ctc import load_pretrained_audio_encoder
 torch.manual_seed(42)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+project_root = Path(__file__).resolve().parents[1]
 
-checkpoint_path = Path("output/exp004/ctc_head_1000.pt")
+checkpoint_path = project_root / "output" / "exp004" / "ctc_head_1000.pt"
 if not checkpoint_path.is_file():
     raise FileNotFoundError(
         f"Missing checkpoint: {checkpoint_path}"
     )
 
 tokenizer = spm.SentencePieceProcessor(
-    model_file="dataset/tokenizer/vivos_vi.model"
+    model_file=str(project_root / "dataset" / "tokenizer" / "vivos_vi.model")
 )
 
 dataset = VIVOSASRDataset(
-    "dataset/manifests/train.tsv",
-    "dataset/vivos",
-    "dataset/tokenizer/vivos_vi.model"
+    str(project_root / "dataset" / "manifests" / "train.tsv"),
+    str(project_root / "dataset" / "vivos"),
+    str(project_root / "dataset" / "tokenizer" / "vivos_vi.model")
 )
 
 sample = dataset[0]
 
 model = make_model(
     tokenizer,
-    "conf/model/backbone/resnet_transformer_baseplus.yaml"
+    project_root / "conf" / "model" / "backbone" / "resnet_transformer_baseplus.yaml"
 )
 
 load_pretrained_audio_encoder(
     model,
-    "../usr2-original/checkpoints/baseplus.pth"
+    project_root / "path" / "baseplus_high_resource_lrs3vox2.pth"
 )
 
 head_state = torch.load(

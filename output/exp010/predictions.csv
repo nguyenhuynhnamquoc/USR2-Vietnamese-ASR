@@ -1,0 +1,101 @@
+﻿split,dataset_index,reference,prediction
+train,106,CHO VIỆC PHÁT TRIỂN SỰ NGHIỆP CỦA HỌ TẠI VIỆT NAM,CHO VIỆC PHÁT TRIỂN SỰ NGHIỆP CỦA HỌ TẠI VIỆT NAM
+train,409,VÀ LẬP KẾ HOẠCH CÓ NGHĨA LÀ,LẬP KẾ HOẠCH CÓ NGHĨA LÀ
+train,434,TÔI PHÁT HIỆN RA QUY TẮC NÀY KHI TÔI CÒN LÀ MỘT THIẾU NIÊN,PHÁT HIỆN RA QUY TẮC NÀY KHI TÔI CÒN LÀ MỘT THIẾU NIÊN
+train,488,HAI BỐ CON THẢO LUẬN VIỆC CHIA TÀI SẢN,HAI BỐ CON THẢO LUẬN VIỆC CHIA SẢN
+train,520,TRỞ THÀNH TẤM THỔ CẨM DƯỚI BÀN TAY CON CÁI,TRỞ THÀNH TẤM THỔ CẨM DƯỚI BÀN TAY CON CÁI
+train,711,TÌM HUNG THỦ HIẾP DÂM BẰNG NƯỚC BỌT NẠN NHÂN,HUNG THỦ HIẾP DÂM BẰNG NƯỚC BỌ NẠN NHÂN
+train,1291,BẤT CHỢT ÔNG THẤY MỘT BÓNG NGƯỜI THẤP THOÁNG TRÊN THÀNH CẦU,CHỢT ÔNG THẤY MỘT BÓNG NGƯỜI THẤP THOÁNG TRÊN THÀNH CẦU
+train,1424,SỜ SOẠNG SAU LƯNG ĐẾN RỢN NGƯỜI,SỜ SOẠNG SAU LƯNG ĐẾN RỢN NGƯỜI
+train,1519,PHỤC VỤ VIỆC PHÁT TRIỂN KINH TẾ DU LỊCH SINH THÁI VÙNG BIỂN ĐẢO,VỤ VIỆC PHÁT TRIỂN KINH TẾ DU LỊCH SINH THÁI VÙNG BIỂN ĐẢO
+train,1535,KỶ NIỆM THỜI THIẾU NIÊN ĐI XEM BÓNG ĐÁ Ở HÀ NỘI,KỶ NIỆM THỜI THIẾU NIÊN ĐI XEM BÓNG ĐÁ Ở HÀ NỘI
+train,1584,ĐÙA VỚI TUYẾT RỠN VỚI VÂN ĐI VỀ MỘT CÕI LỜI TRÂN TRỌNG CHÀO,ĐÙAẾT RỠN VỚI VÂN ĐI VỀ MỘT CÕI LỜI TRÂN TRỌNG CHÀ
+train,1674,VÀ CỨ ĐẾN MÙA HÈ LÀ CHUYỆN CHÓ,CỨ ĐẾN MÙA HÈ LÀ CHUYỆN CHÓ
+train,1679,NHÀ CỬA TRỐNG TRẾCH,CỬA TRỐNG TRẾCH
+train,1824,TÔI ĐÃ CHÁN NGẤY VỚI NHỮNG BUỔI GẶP GỠ GIAO LƯU TẠO CẢM HỨNG,ĐÃ CHN NGẤY VỚI NHỮNG BUỔI GẶP GỠ GIAO LƯU TẠO CẢM HỨNG
+train,2045,NHƯNG GIỚI NHẠC CÔNG RẤT HIẾU HỌC,NHƯNG GIỚI NHẠC RẤT HIẾU HỌC
+train,2286,BÊN TRONG CÁC THẦY ĐỒ NGỒI GHỂNH CHÂN HÚT THUỐC UỐNG TRÀ,TRONG CÁC THẦY ĐỒ NGỒI GHỂNH CHÂN HÚT THUỐC UỐNG TRÀ
+train,2547,VIỆN VỆ SINH DỊCH TỄ TRUNG ƯƠNG,VỆ SINH DỊCH TỄ TRUNG ƯƠNG
+train,2615,VỀ NGUỒN GỐC BÁNH PHỞ CỦA MÌNH,NGUỒN GỐC BÁNH PHỞ CỦA MÌNH
+train,3257,BẤT CHẤP SỰ NGĂN CẢN CỦA CƠ QUAN CHỨC NĂNG,CHẤP SỰ NGĂN CẢN CỦA CƠ QUAN NĂNG
+train,3527,PHƯƠNG PHÁP TINH THẦN VỚI VẤN ĐỀ LÃO HÓA,PHƯƠNG PHÁP TINH THẦN VỚI VẤN ĐỀ LÃO HÓA
+train,3582,ĐỘI BÓNG RỔ ẤY CÒN MANG MỌI NGƯỜI ĐẾN GẦN NHAU HƠN,ĐỘI BÓNG RỔ ẤY CÒN MANG MỌI NGƯỜI ĐẾN GẦN NHAU HƠN
+train,3611,BA MƯƠI BA MƯƠI MỐT,BA MƯƠI BA MƯƠI MỐT
+train,3657,KHÔNG BIẾT CAO THẤP,KHÔNG BIẾT CAO THẤP
+train,3811,SẼ CÓ HIỆU QUẢ CAO,SẼ CÓ HIỆU QUẢ CAO
+train,4012,SỐNG CẠNH SÔNG GIANH,SỐNG CẠNH SÔNG GIANH
+train,4333,TÔI BIẾT ÔNG CỤ ĐANG TRÊN ĐƯỜNG XUỐNG SẢNH,BIẾT ÔNG CỤ ĐANG TRÊN ĐƯỜNG XUỐNG SẢNH
+train,4506,HAI MƯƠI HAI MƯƠI MỐT,HAI MƯƠI HAI MƯƠI MỐT
+train,4552,THẬT Ý NGHĨA VÀ ĐẦY TÍNH NHÂN ĐẠO,Ý NGHĨA VÀ ĐẦY TÍNH NHÂN ĐẠO
+train,4557,MONG CÓ NHIỀU MẠNH THƯỜNG QUÂN CHUNG TAY ỦNG HỘ,CÓ NHIỀU MẠNH THƯỜNG QUÂN CHUNG TAY ỦNG HỘ
+train,5514,CÁC CHUYÊN GIA KỸ THUẬT ĐẾN TỪ NHẬT BẢN MỸ VÀ CẢ TRUNG QUỐC SẼ THAM GIA PHẦN DÀN DỰNG THIẾT KẾ CÁC SÂN KHẤU NƠI ANH BIỂU DIỄN,CHUYÊN GIAKỸ THUẬT ĐẾN TỪ NHẬT BẢN MỸ VÀ CẢ TRUNG QUỐC SẼ THAM GIA PHẦN DÀN DỰNG THIẾT KẾ CÁC SÂN KHU ANH BIỂU DIỄN
+train,5574,ĐỐI VỚI ÔNG CÔ LÀ HIỆN THÂN CHO VẺ ĐẸP THIÊN THẦN NHƯNG CÔ ĐÃ LÀM ÔNG THẬT BUỒN KHI LUÔN TRÁNH NHÌN ÔNG,HIỆN THÂN CHO VẺ ĐẸP THIÊN THẦN NHƯNG CÔ ĐÃ LÀM ÔNG THẬT BUỒN KHI LUÔN TRÁNH NHÌN
+train,5635,VẬY NÊN GẦN ĐÂY NGƯỜI TA KHÔNG GỌI LÀ CHỢ CHUỘT NỮA MÀ KÊU LÀ LÀNG CHUỘT,NÊN GẦN ĐÂY NGƯỜI TA CHỢ CHUỘT NỮA MÀ KÊU LÀ LÀNG CHUỘT
+train,5881,TIẾNG ĐÀN CÒN ĐEM ĐẾN CHO ÔNG NHỮNG NGƯỜI BẠN NHIỀU LỨA TUỔI ĐÔNG NHẤT LÀ THANH NIÊN,ĐÀN CHO ÔNG NHỮNG NGƯỜI BẠN NHIỀU LỨA TUỔI ĐÔNG NHẤT LÀ THANH NIÊN
+train,6201,GỢI Ý NHỮNG VIỆC NHƯ THẾ NÀY ĐỂ TẠO CHO TRẺ TÍNH QUAN SÁT VÀ CÓ TRÁCH NHIỆM BIẾT VIỆC CẦN PHẢI LÀM ĐỠ CHA MẸ,ỢI Ý NHỮNG VIỆC NHƯ THẾ NÀY ĐỂ TẠO CHO TRẺ TÍNH QUAN SÁT VÀ CÓ TRÁCH NHIỆM BIẾT VIỆC CẦN PHẢI CHA MẸ
+train,6224,LIÊN QUAN VIỆC ĐƯA THÔNG TIN VỀ GIÁ BẤT ĐỘNG SẢN HIỆN NAY CÁC CÔNG TY MÔI GIỚI CÓ MỘT CÁCH ĐƯA KHÁC NHAU,QUAN ĐƯA THÔNG TIN VỀ GIÁ BẤT ĐỘNG SẢN HIỆN NAY CÁC TY MÔI GIỚI CÓ MỘT CÁCH ĐƯA KHÁC NHAU
+train,6873,CÁC CHUYÊN GIA CŨNG KHUYÊN BẠN KHÔNG NÊN ĂN QUÁ NHIỀU CÁC ĐỒ ĂN NHANH VÀ NHỮNG MÓN RÁN,CHUYÊN GIA CŨNG KHUYÊN BẠN KHÔNG NÊN ĂN QUÁ NHIỀU CÁC ĐỒ ĂN NHANH VÀ NHỮNG MÓN RÁN
+train,6912,ĐẤU TRANH THÌ ĐẤU TRANH NHƯNG HÀNG NGÀY CHÚNG EM VẪN QUÝ TRỌNG LẪN NHAU,TRANH THÌ ĐẤU TRANH NHƯNG HÀNG NGÀY CHÚNG EM VẪN QUÝ TRỌNG LẪN NHAU
+train,6924,ÔNG VÌ SỰ KHAO KHÁT HỌC TẬP TRAU DỒI KIẾN THỨC NÊN ĐÃ ĐI HỌC Ở PHÁP NHIỀU NĂM,VÌ SỰ KHA KHÁT HỌC TẬP TRAU DỒI KIẾN THỨC NÊN ĐÃ ĐI HỌC Ở NĂM
+train,7359,TUY NHIÊN CÓ MỘT NGÀNH THƯỜNG KHÔNG LỘ DIỆN ỒN ÀO NHƯNG LẠI CÓ LỢI NHUẬN VÀ QUI MÔ RẤT LỚN PHÂN PHỐI,NHIÊN CÓ MỘT NGÀNH THƯỜNG KHÔNG LỘ DIỆN ỒN ÀO NHƯNG LẠI CÓ LỢI NHUẬN VÀ QUI MÔ RẤT LỚN PHÂN PHỐI
+train,7527,VÌ RẤT NGON CÓ VỊ THƠM VÀ BÉO CÓ GIÁ TRỊ DINH DƯỠNG RẤT CAO ĐẶC BIỆT TỐT CHO SỨC KHỎE,VỊM VÀ BÉO CÓ GIÁ TRỊ DI ĐẶC BIỆT KHỎE
+train,8279,NHỮNG THÂN NHÂN BỆNH NHÂN NÓI RẰNG CHỈ CÓ TÔI MỚI DÁM GỌI ĐƯỜNG DÂY NÓNG CHỨ HỌ KHÔNG DÁM,THÂN NHÂN NHÂN NÓI RẰNG CHỈ CÓ TÔI MỚI DÁM GỌI ĐƯỜNG DÂY NÓNG CHỨ HỌ KHÔNG DÁM
+train,8785,CHÚC BẠN ĐỌC CÓ THẬT NHIỀU THỜI GIAN THƯ GIÃN THOẢI MÁI,ÚC BẠN ĐỌC CÓ THẬT NHIỀU THỜI GIAN THƯ GIÃN THOẢI MÁI
+train,8928,TẠI SAO GIỮA CÁC HÃNG LẠI CÓ SỰ CHÊNH LỆCH LỚN VỀ GIÁ NHƯ VẬY,SAO GIỮA CÁC HÃNG LẠI CÓ SỰ CHÊNH LỆCH LỚN VỀ GIÁ NHƯ VẬY
+train,8935,SỰ TỔN THƯƠNG TRONG TÂM HỒN KHÔNG THƯỚC TẤC NÀO ĐO ĐƯỢC,TỔN THƯƠNG TRONG TÂM HỒN KHÔNG THƯỚC TẤC NÀO ĐO ĐƯỢC
+train,9044,TUY NHIÊN THỊ TRƯỜNG SÁCH ĐIỆN TỬ CŨNG GẶP KHÁ NHIỀU KHÓ KHĂN THÁCH THỨC,NHIÊN THỊ TRƯỜNG SÁCH ĐIỆN GẶP KHÁ NHIỀU KHÓ KHĂN THÁCH THỨC
+train,9195,THÌ CÔNG TY SỐNG LAY LẮT NGƯỜI LAO ĐỘNG THIẾU ĂN,CÔNG TY SỐNG LAY LẮT NGƯỜI LAO ĐỘNG THIẾU ĂN
+train,9654,CHỈ KHI NÀO BỆNH CÓ TRIỆU CHỨNG NẶNG HỌ MỚI ĐƯA CON ĐẾN BỆNH VIỆN,KHI NÀO BỆNH CÓ TRIỆU CHỨNG NẶNG HỌ MỚI ĐƯA CON ĐẾN VIỆN
+train,9674,CÔ LUÔN TỰ HÀO MÌNH LÀ NGƯỜI ĐEM VẺ ĐẸP ĐẾN CHO KHU PHỐ,LUÔN TỰ HÀO MÌNH LÀ NGƯỜI ĐEM VẺ ĐẸP ĐẾN CHO KHU PHỐ
+train,9863,TRỜI Ạ SÂN GÔN NHIỀU THẾ MÀ SAO BỌN MÌNH KHÔNG CÓ CÁCH GÌ,Ạ SÂN GÔN NHIỀU THẾ MÀ SAO BỌN MÌNH KHÔNG CÓ CÁCH GÌ
+train,9891,SẼ XEM XÉT QUYẾT ĐỊNH CƠ CẤU NHÂN SỰ CẤP CAO,SẼ XEM XÉT QUYẾT ĐỊNH CƠU NHÂN SỰ CẤP CAO
+validation,39,Ở NHÀ CHỊ TRƯƠNG VŨ,
+validation,78,CHỈ CHE BẰNG CHIẾC LÔNG ĐÀ ĐIỂU,
+validation,100,TRÊN DÒNG SÔNG UỐN LƯỢN QUANH CHÙA,THUỐC
+validation,118,SAU KHI ĐI GIẦY DA NHỌN MŨI MÕM NGÓE QUÁ CHẬT,MƯƠI
+validation,125,ĐỂ VẬT THỂ BÊN NGOÀI MẮT DÙ GẦN HAY XA,
+validation,130,CỐ GẮNG THỰC HIỆN ĐÚNG ĐẠO LÀM QUAN THEO SÁCH THÁNH HIỀN,NHÂN CÒN NIÊN
+validation,157,TỪ CẢNG CÁ LÝ SƠN VÀO ĐẤT LIỀN,
+validation,196,NGÀY LẶNG GIÓ KHẼ KHÀNG BUÔNG TIẾNG KHÓC,CÓ
+validation,197,LÁT SAU CÓ CÔ BÉ ỒNG ỘC CHO CHÓ ĂN CHÈ NGAY TRÊN BÀN,KHÔNG
+validation,211,ĐÀN BÀ TOÀN NGOẠI TÌNH MÀ THÔI,NGƯỜIỦ
+validation,219,TỐT NHẤT LÀ KHÔNG NÊN BIẾT,CHO KHÔNG
+validation,255,KHI SƠN TRÊN CÁC MẶT BẰNG PHẲNG,
+validation,263,HỌ ĐÃ PHẢI VAY NHỮNG KHOẢN TIỀN RẤT LỚN,NGƯỜIÔ
+validation,294,NGƯ DÂN NGUYỄN VĂN MÙI,KHU MƯƠI
+validation,314,CHẢ CÁ QUẾT VỚI THỊT RÙA TƯỢNG TRƯNG CHO PHÚC THỌ,NG
+validation,328,TÔI MỚI DẠM HỎI ÚT ĐÃ CƯỜI BẼN LẼN,
+validation,339,BỘ NGOẠI GIAO TRÂN TRỌNG THÔNG BÁO,
+validation,360,NHỮNG TRIỆU CHỨNG NÀY,CÔNG
+validation,372,THÌ TỪ CHIẾC GỐI LOÉ LÊN NHỮNG TIA VÀNG SÁNG RỰC,N
+validation,382,NGAY CẢ CÁC CƠ QUAN NHÀ NƯỚC NHẬP BÒ THÔNG QUA TRUNG GIAN,VIỆCẾ
+validation,556,BẤT CỨ KHI NÀO CHÚNG VÒI VĨNH,CÓ
+validation,563,CÚC THÁI,
+validation,585,ĐI QUỆNH QUOẠNG,Ý
+validation,606,CÁC TỈ PHÚ SƯU TẬP DÀ BUÔN ĐỒ CỔ,U CÓ
+validation,757,ĐÃ ĐẾN LÚC ĐỒNG TIỀN PHẢI VỀ VỚI GIÁ TRỊ THỰC CỦA NÓ RỒI,
+validation,762,TÔI THẤY CHUYỆN NÀY BÌNH THƯỜNG MÀ,N NG
+validation,769,CÁC QUỸ ĐẦU TƯ CỦA TRUNG QUỐC ĐANG TUNG TIỀN MUA CỔ PHẦN CÁC HÃNG CÔNG NGHỆ CAO KHẮP THẾ GIỚI,THỜI TY CÓ LÀ
+validation,771,ĐÀI LOAN HÔM QUA THÚC GIỤC MỸ TÔN TRỌNG THỎA THUẬN CUNG CẤP CÁC TÀU NGẦM,ĐỘI TH
+validation,792,QUÁ TUYỆT VỜI VÀ ĐẦY Ý NGHĨA,CHẤPỐ
+validation,806,BẠN SẼ THẤY ĐẤT NƯỚC NÀY ĐẦY DẪY TRUYỆN TRANH,THẬT
+validation,885,TUI VẼ CÂY TRÚC MÀ SAO CỨ RA TOÀN CÂY DỪA KHÔNG NÈ,
+validation,888,TRƯỜNG TIỂU HỌC NGUYỄN TRÃI,
+validation,928,KHÔNG KHÍ TRONG LÀNH VÀ YÊN TĨNH KHIẾN LÒNG NHƯ THANH THẢN LẠ,NGƯ
+validation,947,CỤ GIÀ RÊN HỪ HỪ,
+validation,1015,BA MƯƠI TÁM BA MƯƠI CHÍN,MƯƠI
+validation,1020,BỐN MƯƠI TÁM BỐN MƯƠI CHÍN,
+validation,1037,TÁM MƯƠI HAI TÁM MƯƠI BA,
+validation,1049,MỘT HAI BA BỐN NĂM,
+validation,1052,MINH TRƯỜNG CŨNG KHÔNG PHẢI NGOẠI LỆ,N
+validation,1069,CÔ TA KHÁ NỔI TIẾNG TRÊN BÁO CÔNG AN,SỰN
+validation,1120,RỒI CÔ SINH CON GÁI TRONG NIỀM HẠNH PHÚC TRÀN TRỀ,Ố
+validation,1177,TUY NHIÊN KHI CHO BÉ ĂN THỊT BẠN NÊN CHỌN LOẠI THỊT NẠC,U VIỆC TUỔI
+validation,1180,ĐÓ CŨNG CHÍNH LÀ NHỮNG ĐIỀU MÀ CÁC ĐỒNG NGHIỆP CẦN Ở BẠN,LN
+validation,1186,ĐÓ LÀ SỨC MẠNH TUYỆT VỜI ĐỂ SẢN SINH VÀ TÁI TẠO SỰ SỐNG,UNG
+validation,1223,TỐT HƠN MỘT CHÚT LÀ ĐÁNG MỪNG VÀ CẦN ĐỘNG VIÊN,
+validation,1226,ANH ẤY SẼ GIÚP MU CHƠI TỐT TRONG NHỮNG NĂM TỚI,CÔNG CÁC MƯƠI KHÔNG THIẾU NHÂN
+validation,1247,ĐÃ CÓ HAI LUỒNG Ý KIẾN TRÁI NGƯỢC VỀ VIỆC NÀY,Ú LẠI
+validation,1276,DỄ SỢ NHẤT LÀ ANH TỚI ĐÂU THÌ EM TỚI ĐÓ,SAOCC
+validation,1278,VIỆC NÀY XIN NÓI THẬT LÀ CHƯA AI TRỰC TIẾP ĐẶT VẤN ĐỀ CHẠY CHỌT,NAY RẰNG
+validation,1375,MỤ HAI ĐỨNG ĐÓ ĐỂ ĐÓNG VAI TUỒNG CỦA NGƯỜI THỨ BA,

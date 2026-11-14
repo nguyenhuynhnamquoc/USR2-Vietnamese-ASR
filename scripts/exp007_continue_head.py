@@ -1,4 +1,6 @@
 
+from pathlib import Path
+
 import torch
 import sentencepiece as spm
 
@@ -10,14 +12,15 @@ torch.manual_seed(42)
 torch.set_num_threads(4)
 
 device = torch.device("cuda")
+project_root = Path(__file__).resolve().parents[1]
 tokenizer = spm.SentencePieceProcessor(
-    model_file="dataset/tokenizer/vivos_vi.model"
+    model_file=str(project_root / "dataset" / "tokenizer" / "vivos_vi.model")
 )
 
 dataset = VIVOSASRDataset(
-    "dataset/manifests/train.tsv",
-    "dataset/vivos",
-    "dataset/tokenizer/vivos_vi.model"
+    str(project_root / "dataset" / "manifests" / "train.tsv"),
+    str(project_root / "dataset" / "vivos"),
+    str(project_root / "dataset" / "tokenizer" / "vivos_vi.model")
 )
 
 sample = dataset[0]
@@ -25,17 +28,17 @@ reference = sample["text"]
 
 model = make_model(
     tokenizer,
-    "conf/model/backbone/resnet_transformer_baseplus.yaml"
+    project_root / "conf" / "model" / "backbone" / "resnet_transformer_baseplus.yaml"
 )
 
 matched, _ = load_pretrained_audio_encoder(
-    model, "../usr2-original/checkpoints/baseplus.pth"
+    model, project_root / "path" / "baseplus_high_resource_lrs3vox2.pth"
 )
 model.to(device).eval()
 
 model.ctc_projection.load_state_dict(
     torch.load(
-        "output/exp004/ctc_head_1000.pt",
+        project_root / "output" / "exp004" / "ctc_head_1000.pt",
         map_location="cpu",
         weights_only=True
     )
@@ -104,7 +107,7 @@ for step in range(1, 501):
         break
 
 
-torch.save(
-    model.ctc_projection.state_dict(),
-    "output/exp004/ctc_head_500.pt"
-)
+output_path = project_root / "output" / "exp004" / "ctc_head_500.pt"
+output_path.parent.mkdir(parents=True, exist_ok=True)
+torch.save(model.ctc_projection.state_dict(), output_path)
+print("Saved CTC head:", output_path)
