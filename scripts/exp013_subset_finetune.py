@@ -394,6 +394,15 @@ def main():
             for prediction in predictions:
                 writer.writerow({"split": split, **prediction})
 
+    write_history(
+        args.output_dir,
+        history,
+        train_indices,
+        args,
+        device,
+        best_epoch,
+        best_validation_wer,
+    )
     print(f"Saved decoded examples: {predictions_path}")
     print(f"Metrics: {args.output_dir / 'summary.json'}")
 

@@ -769,7 +769,7 @@ EXP-012 found no evidence that the tested decoding change or impossible CTC alig
 
 ## EXP-013: End-to-End Fine-Tuning on a 1,000-Utterance Subset
 
-**Status:** Planned
+**Status:** Completed
 **Objective:** Test whether full encoder adaptation on substantially more labeled VIVOS data improves WER, while keeping the official test split untouched.
 
 ### 1. Experimental Setup
@@ -816,6 +816,20 @@ For a quick pipeline smoke test before the full pilot:
   --output-dir output\exp013_smoke
 ```
 
-### 2. Interpretation
+### 2. Experimental Results
 
-Compare train and full-validation WER at each epoch. Use the best validation checkpoint, not automatically the last epoch. If validation WER trends downward, expand the training subset before attempting a full-data epoch. If train WER improves while validation remains near 100%, inspect per-sample predictions and learning curves before increasing compute. Record results after execution; no EXP-013 measurements have been collected yet.
+The run completed on a CUDA device for all three epochs. The full 1,400-utterance validation set was evaluated after each epoch; the official test set was not used.
+
+| Epoch | Train loss | Train WER | Validation loss | Validation WER |
+|---|---:|---:|---:|---:|
+| 1 | 8.6582 | 103.70% | 4.2648 | 71.89% |
+| 2 | 3.1051 | 58.10% | 2.6924 | 56.22% |
+| 3 | 2.0125 | 44.81% | 2.3331 | 50.73% |
+
+The best checkpoint is epoch 3 with validation WER 50.73%. `predictions.csv` contains 1,000 train-subset and 1,400 validation predictions. Exact matches were 95/1,000 (9.5%) on train and 83/1,400 (5.9%) on validation; neither split had empty predictions.
+
+### 3. Interpretation and Next Step
+
+Both training and validation WER improved at every epoch, and the final train/validation gap was about 5.9 percentage points. This is a substantial improvement over the near-100% WER in earlier experiments, although those used only 50 validation utterances, so the results are not a strict like-for-like comparison. Validation WER remains high and the sample predictions still contain many substitutions and omissions.
+
+Continue from `last.pt` to five total epochs on the same fixed subset before increasing the training set. Keep the official VIVOS test split untouched until model selection is complete.

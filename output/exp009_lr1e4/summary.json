@@ -1,0 +1,66 @@
+{
+  "experiment": "EXP-008",
+  "seed": 42,
+  "device": "cpu",
+  "loaded_encoder_tensors": 376,
+  "steps": 1000,
+  "learning_rate": 0.0001,
+  "train_indices": [
+    409,
+    1424,
+    1679,
+    1824,
+    2286,
+    3657,
+    4012,
+    4506,
+    8935,
+    9674
+  ],
+  "validation_indices": [
+    78,
+    197,
+    294,
+    585,
+    757,
+    928,
+    947,
+    1020,
+    1226,
+    1375
+  ],
+  "initial": {
+    "train": {
+      "loss": 50.37062015533447,
+      "wer": 5.590361445783133,
+      "cer": 5.201101928374656,
+      "exact_match": 0.0,
+      "blank_ratio": 0.002570694087403599
+    },
+    "validation": {
+      "loss": 35.66734447479248,
+      "wer": 4.844444444444444,
+      "cer": 4.553475935828877,
+      "exact_match": 0.0,
+      "blank_ratio": 0.007215007215007215
+    }
+  },
+  "final": {
+    "train": {
+      "loss": 4.016597282886505,
+      "wer": 0.5421686746987951,
+      "cer": 0.48760330578512395,
+      "exact_match": 0.0,
+      "blank_ratio": 0.897172236503856
+    },
+    "validation": {
+      "loss": 7.469726467132569,
+      "wer": 1.0,
+      "cer": 1.0,
+      "exact_match": 0.0,
+      "blank_ratio": 1.0
+    }
+  },
+  "checkpoint": "output\\exp009_lr1e4\\ctc_head.pt",
+  "predictions": "output\\exp009_lr1e4\\predictions.csv"
+}

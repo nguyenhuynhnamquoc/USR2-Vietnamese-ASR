@@ -1,0 +1,48 @@
+{
+  "experiment": "EXP-008",
+  "seed": 42,
+  "device": "cpu",
+  "loaded_encoder_tensors": 376,
+  "steps": 200,
+  "learning_rate": 0.001,
+  "train_indices": [
+    1824
+  ],
+  "validation_indices": [
+    78
+  ],
+  "initial": {
+    "train": {
+      "loss": 35.70861053466797,
+      "wer": 4.857142857142857,
+      "cer": 4.933333333333334,
+      "exact_match": 0.0,
+      "blank_ratio": 0.0
+    },
+    "validation": {
+      "loss": 39.8299560546875,
+      "wer": 6.857142857142857,
+      "cer": 6.0,
+      "exact_match": 0.0,
+      "blank_ratio": 0.03571428571428571
+    }
+  },
+  "final": {
+    "train": {
+      "loss": 0.5623686909675598,
+      "wer": 0.0,
+      "cer": 0.0,
+      "exact_match": 1.0,
+      "blank_ratio": 0.0
+    },
+    "validation": {
+      "loss": 28.617206573486328,
+      "wer": 2.2857142857142856,
+      "cer": 1.8387096774193548,
+      "exact_match": 0.0,
+      "blank_ratio": 0.0
+    }
+  },
+  "checkpoint": "output\\exp008_one_sample\\ctc_head.pt",
+  "predictions": "output\\exp008_one_sample\\predictions.csv"
+}

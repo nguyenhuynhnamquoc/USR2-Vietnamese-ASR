@@ -1,0 +1,21 @@
+﻿split,dataset_index,reference,prediction
+train,409,VÀ LẬP KẾ HOẠCH CÓ NGHĨA LÀ,VÀ LẬP KẾ HOẠCH CÓ NGHĨA
+train,1424,SỜ SOẠNG SAU LƯNG ĐẾN RỢN NGƯỜI,SỜ SOẠNG SAU LƯNG ĐẾN RỢN NGƯỜI
+train,1679,NHÀ CỬA TRỐNG TRẾCH,NHÀ CỬA TRỐNG TRẾCH
+train,1824,TÔI ĐÃ CHÁN NGẤY VỚI NHỮNG BUỔI GẶP GỠ GIAO LƯU TẠO CẢM HỨNG,ĐÃ CHÁN NGẤY VỚI NHỮNG BUỔI GẶP GỠ GIAO LƯU TẠO CẢM HỨNG
+train,2286,BÊN TRONG CÁC THẦY ĐỒ NGỒI GHỂNH CHÂN HÚT THUỐC UỐNG TRÀ,TRONG CÁC THẦY ĐỒ NGỒI GHỂ CHÂN HÚT THUỐC UỐNG TRÀ
+train,3657,KHÔNG BIẾT CAO THẤP,KHÔNG BIẾT CAO THẤP
+train,4012,SỐNG CẠNH SÔNG GIANH,SỐNG CẠNH SÔNG GIANH
+train,4506,HAI MƯƠI HAI MƯƠI MỐT,HAI MƯƠI HAI MƯƠI MỐT
+train,8935,SỰ TỔN THƯƠNG TRONG TÂM HỒN KHÔNG THƯỚC TẤC NÀO ĐO ĐƯỢC,TỔN THƯƠNG TRONG TÂM HỒN KHÔNG THƯỚC TẤC NÀO ĐO ĐƯỢC
+train,9674,CÔ LUÔN TỰ HÀO MÌNH LÀ NGƯỜI ĐEM VẺ ĐẸP ĐẾN CHO KHU PHỐ,LUÔN HÀO MÌNH LÀ NGƯỜI ĐEM VẺ ĐẸP ĐẾN CHO KHU PHỐ
+validation,78,CHỈ CHE BẰNG CHIẾC LÔNG ĐÀ ĐIỂU,
+validation,197,LÁT SAU CÓ CÔ BÉ ỒNG ỘC CHO CHÓ ĂN CHÈ NGAY TRÊN BÀN,NGẤ
+validation,294,NGƯ DÂN NGUYỄN VĂN MÙI,
+validation,585,ĐI QUỆNH QUOẠNG,
+validation,757,ĐÃ ĐẾN LÚC ĐỒNG TIỀN PHẢI VỀ VỚI GIÁ TRỊ THỰC CỦA NÓ RỒI,LƯNG
+validation,928,KHÔNG KHÍ TRONG LÀNH VÀ YÊN TĨNH KHIẾN LÒNG NHƯ THANH THẢN LẠ,N MÌNH NGHĨA
+validation,947,CỤ GIÀ RÊN HỪ HỪ,
+validation,1020,BỐN MƯƠI TÁM BỐN MƯƠI CHÍN,
+validation,1226,ANH ẤY SẼ GIÚP MU CHƠI TỐT TRONG NHỮNG NĂM TỚI,MƯƠI
+validation,1375,MỤ HAI ĐỨNG ĐÓ ĐỂ ĐÓNG VAI TUỒNG CỦA NGƯỜI THỨ BA,

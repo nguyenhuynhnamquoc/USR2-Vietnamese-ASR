@@ -1,0 +1,66 @@
+{
+  "experiment": "EXP-008",
+  "seed": 42,
+  "device": "cpu",
+  "loaded_encoder_tensors": 376,
+  "steps": 1000,
+  "learning_rate": 0.001,
+  "train_indices": [
+    409,
+    1424,
+    1679,
+    1824,
+    2286,
+    3657,
+    4012,
+    4506,
+    8935,
+    9674
+  ],
+  "validation_indices": [
+    78,
+    197,
+    294,
+    585,
+    757,
+    928,
+    947,
+    1020,
+    1226,
+    1375
+  ],
+  "initial": {
+    "train": {
+      "loss": 50.37062015533447,
+      "wer": 5.590361445783133,
+      "cer": 5.201101928374656,
+      "exact_match": 0.0,
+      "blank_ratio": 0.002570694087403599
+    },
+    "validation": {
+      "loss": 35.66734447479248,
+      "wer": 4.844444444444444,
+      "cer": 4.553475935828877,
+      "exact_match": 0.0,
+      "blank_ratio": 0.007215007215007215
+    }
+  },
+  "final": {
+    "train": {
+      "loss": 0.23352829590439797,
+      "wer": 0.08433734939759036,
+      "cer": 0.06060606060606061,
+      "exact_match": 0.5,
+      "blank_ratio": 0.7339331619537275
+    },
+    "validation": {
+      "loss": 8.508108425140382,
+      "wer": 1.0,
+      "cer": 0.9545454545454546,
+      "exact_match": 0.0,
+      "blank_ratio": 0.98989898989899
+    }
+  },
+  "checkpoint": "D:\\HK252\\NCKH\\usr2_vietnam\\output\\exp008\\ctc_head.pt",
+  "predictions": "D:\\HK252\\NCKH\\usr2_vietnam\\output\\exp008\\predictions.csv"
+}

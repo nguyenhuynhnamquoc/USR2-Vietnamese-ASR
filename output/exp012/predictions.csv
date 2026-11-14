@@ -1,0 +1,101 @@
+﻿checkpoint,dataset_index,reference,greedy_prediction,beam_prediction,input_frames,target_tokens,minimum_ctc_frames
+EXP-010 frozen encoder,39,Ở NHÀ CHỊ TRƯƠNG VŨ,,,75,7,7
+EXP-010 frozen encoder,78,CHỈ CHE BẰNG CHIẾC LÔNG ĐÀ ĐIỂU,,,84,13,13
+EXP-010 frozen encoder,100,TRÊN DÒNG SÔNG UỐN LƯỢN QUANH CHÙA,THUỐC,THUỐC,67,15,15
+EXP-010 frozen encoder,118,SAU KHI ĐI GIẦY DA NHỌN MŨI MÕM NGÓE QUÁ CHẬT,MƯƠI,MƯƠI,102,23,23
+EXP-010 frozen encoder,125,ĐỂ VẬT THỂ BÊN NGOÀI MẮT DÙ GẦN HAY XA,,,95,10,10
+EXP-010 frozen encoder,130,CỐ GẮNG THỰC HIỆN ĐÚNG ĐẠO LÀM QUAN THEO SÁCH THÁNH HIỀN,NHÂN CÒN NIÊN,NHÂN CÒN  NIÊN,115,19,19
+EXP-010 frozen encoder,157,TỪ CẢNG CÁ LÝ SƠN VÀO ĐẤT LIỀN,,,84,12,12
+EXP-010 frozen encoder,196,NGÀY LẶNG GIÓ KHẼ KHÀNG BUÔNG TIẾNG KHÓC,CÓ,CÓ,82,15,15
+EXP-010 frozen encoder,197,LÁT SAU CÓ CÔ BÉ ỒNG ỘC CHO CHÓ ĂN CHÈ NGAY TRÊN BÀN,KHÔNG,KHÔNG,117,22,22
+EXP-010 frozen encoder,211,ĐÀN BÀ TOÀN NGOẠI TÌNH MÀ THÔI,NGƯỜIỦ,NGƯỜIỦI,60,7,7
+EXP-010 frozen encoder,219,TỐT NHẤT LÀ KHÔNG NÊN BIẾT,CHO KHÔNG,CHO KHÔNG,62,6,6
+EXP-010 frozen encoder,255,KHI SƠN TRÊN CÁC MẶT BẰNG PHẲNG,,,75,9,9
+EXP-010 frozen encoder,263,HỌ ĐÃ PHẢI VAY NHỮNG KHOẢN TIỀN RẤT LỚN,NGƯỜIÔ,CH NGƯỜIÔ,80,14,14
+EXP-010 frozen encoder,294,NGƯ DÂN NGUYỄN VĂN MÙI,KHU MƯƠI,KHU MƯƠI,50,6,6
+EXP-010 frozen encoder,314,CHẢ CÁ QUẾT VỚI THỊT RÙA TƯỢNG TRƯNG CHO PHÚC THỌ,NG,NG,91,20,20
+EXP-010 frozen encoder,328,TÔI MỚI DẠM HỎI ÚT ĐÃ CƯỜI BẼN LẼN,,,78,19,19
+EXP-010 frozen encoder,339,BỘ NGOẠI GIAO TRÂN TRỌNG THÔNG BÁO,,,65,9,9
+EXP-010 frozen encoder,360,NHỮNG TRIỆU CHỨNG NÀY,CÔNG,CÔNG,43,4,4
+EXP-010 frozen encoder,372,THÌ TỪ CHIẾC GỐI LOÉ LÊN NHỮNG TIA VÀNG SÁNG RỰC,N,N,93,20,20
+EXP-010 frozen encoder,382,NGAY CẢ CÁC CƠ QUAN NHÀ NƯỚC NHẬP BÒ THÔNG QUA TRUNG GIAN,VIỆCẾ,VIỆCẾ,121,15,15
+EXP-010 frozen encoder,556,BẤT CỨ KHI NÀO CHÚNG VÒI VĨNH,CÓ,CÓ,53,13,13
+EXP-010 frozen encoder,563,CÚC THÁI,,,35,4,4
+EXP-010 frozen encoder,585,ĐI QUỆNH QUOẠNG,Ý,Ý,37,8,8
+EXP-010 frozen encoder,606,CÁC TỈ PHÚ SƯU TẬP DÀ BUÔN ĐỒ CỔ,U CÓ,U CÓ,70,16,16
+EXP-010 frozen encoder,757,ĐÃ ĐẾN LÚC ĐỒNG TIỀN PHẢI VỀ VỚI GIÁ TRỊ THỰC CỦA NÓ RỒI,,N,78,14,14
+EXP-010 frozen encoder,762,TÔI THẤY CHUYỆN NÀY BÌNH THƯỜNG MÀ,N NG,N NG,67,7,7
+EXP-010 frozen encoder,769,CÁC QUỸ ĐẦU TƯ CỦA TRUNG QUỐC ĐANG TUNG TIỀN MUA CỔ PHẦN CÁC HÃNG CÔNG NGHỆ CAO KHẮP THẾ GIỚI,THỜI TY CÓ LÀ,THỜI TY CÓ LÀ,139,28,28
+EXP-010 frozen encoder,771,ĐÀI LOAN HÔM QUA THÚC GIỤC MỸ TÔN TRỌNG THỎA THUẬN CUNG CẤP CÁC TÀU NGẦM,ĐỘI TH,ĐỘI TH,94,28,28
+EXP-010 frozen encoder,792,QUÁ TUYỆT VỜI VÀ ĐẦY Ý NGHĨA,CHẤPỐ,CHẤPỐ,50,13,13
+EXP-010 frozen encoder,806,BẠN SẼ THẤY ĐẤT NƯỚC NÀY ĐẦY DẪY TRUYỆN TRANH,THẬT,THẬT,92,17,17
+EXP-010 frozen encoder,885,TUI VẼ CÂY TRÚC MÀ SAO CỨ RA TOÀN CÂY DỪA KHÔNG NÈ,,,70,21,21
+EXP-010 frozen encoder,888,TRƯỜNG TIỂU HỌC NGUYỄN TRÃI,,,46,7,7
+EXP-010 frozen encoder,928,KHÔNG KHÍ TRONG LÀNH VÀ YÊN TĨNH KHIẾN LÒNG NHƯ THANH THẢN LẠ,NGƯ,NGƯ,82,18,18
+EXP-010 frozen encoder,947,CỤ GIÀ RÊN HỪ HỪ,,N,48,10,10
+EXP-010 frozen encoder,1015,BA MƯƠI TÁM BA MƯƠI CHÍN,MƯƠI,MƯƠI,51,6,6
+EXP-010 frozen encoder,1020,BỐN MƯƠI TÁM BỐN MƯƠI CHÍN,,,46,6,6
+EXP-010 frozen encoder,1037,TÁM MƯƠI HAI TÁM MƯƠI BA,,MƯƠI,51,6,6
+EXP-010 frozen encoder,1049,MỘT HAI BA BỐN NĂM,,,53,5,5
+EXP-010 frozen encoder,1052,MINH TRƯỜNG CŨNG KHÔNG PHẢI NGOẠI LỆ,N,N,48,7,7
+EXP-010 frozen encoder,1069,CÔ TA KHÁ NỔI TIẾNG TRÊN BÁO CÔNG AN,SỰN,SỰN,59,9,9
+EXP-010 frozen encoder,1120,RỒI CÔ SINH CON GÁI TRONG NIỀM HẠNH PHÚC TRÀN TRỀ,Ố,Ố,78,14,14
+EXP-010 frozen encoder,1177,TUY NHIÊN KHI CHO BÉ ĂN THỊT BẠN NÊN CHỌN LOẠI THỊT NẠC,U VIỆC TUỔI,U VIỆC TUỔI,82,17,17
+EXP-010 frozen encoder,1180,ĐÓ CŨNG CHÍNH LÀ NHỮNG ĐIỀU MÀ CÁC ĐỒNG NGHIỆP CẦN Ở BẠN,LN,LN,73,13,13
+EXP-010 frozen encoder,1186,ĐÓ LÀ SỨC MẠNH TUYỆT VỜI ĐỂ SẢN SINH VÀ TÁI TẠO SỰ SỐNG,UNG,UNG L,92,21,21
+EXP-010 frozen encoder,1223,TỐT HƠN MỘT CHÚT LÀ ĐÁNG MỪNG VÀ CẦN ĐỘNG VIÊN,,,71,13,13
+EXP-010 frozen encoder,1226,ANH ẤY SẼ GIÚP MU CHƠI TỐT TRONG NHỮNG NĂM TỚI,CÔNG CÁC MƯƠI KHÔNG THIẾU NHÂN,CÔNG CÁC MƯƠI KHÔNG THIẾU NHÂN,67,12,12
+EXP-010 frozen encoder,1247,ĐÃ CÓ HAI LUỒNG Ý KIẾN TRÁI NGƯỢC VỀ VIỆC NÀY,Ú LẠI,Ú LẠI,60,15,15
+EXP-010 frozen encoder,1276,DỄ SỢ NHẤT LÀ ANH TỚI ĐÂU THÌ EM TỚI ĐÓ,SAOCC,SAOCC,59,11,11
+EXP-010 frozen encoder,1278,VIỆC NÀY XIN NÓI THẬT LÀ CHƯA AI TRỰC TIẾP ĐẶT VẤN ĐỀ CHẠY CHỌT,NAY RẰNG,NAY RẰNG,81,17,17
+EXP-010 frozen encoder,1375,MỤ HAI ĐỨNG ĐÓ ĐỂ ĐÓNG VAI TUỒNG CỦA NGƯỜI THỨ BA,,,84,17,17
+EXP-011 partial fine-tune,39,Ở NHÀ CHỊ TRƯƠNG VŨ,,,75,7,7
+EXP-011 partial fine-tune,78,CHỈ CHE BẰNG CHIẾC LÔNG ĐÀ ĐIỂU,,,84,13,13
+EXP-011 partial fine-tune,100,TRÊN DÒNG SÔNG UỐN LƯỢN QUANH CHÙA,,G,67,15,15
+EXP-011 partial fine-tune,118,SAU KHI ĐI GIẦY DA NHỌN MŨI MÕM NGÓE QUÁ CHẬT,MƯƠI,MƯƠI,102,23,23
+EXP-011 partial fine-tune,125,ĐỂ VẬT THỂ BÊN NGOÀI MẮT DÙ GẦN HAY XA,,,95,10,10
+EXP-011 partial fine-tune,130,CỐ GẮNG THỰC HIỆN ĐÚNG ĐẠO LÀM QUAN THEO SÁCH THÁNH HIỀN,NHÂN,NHÂN,115,19,19
+EXP-011 partial fine-tune,157,TỪ CẢNG CÁ LÝ SƠN VÀO ĐẤT LIỀN,,,84,12,12
+EXP-011 partial fine-tune,196,NGÀY LẶNG GIÓ KHẼ KHÀNG BUÔNG TIẾNG KHÓC,L CÓ,L CÓ,82,15,15
+EXP-011 partial fine-tune,197,LÁT SAU CÓ CÔ BÉ ỒNG ỘC CHO CHÓ ĂN CHÈ NGAY TRÊN BÀN,MỘT KHI,MỘT KHI,117,22,22
+EXP-011 partial fine-tune,211,ĐÀN BÀ TOÀN NGOẠI TÌNH MÀ THÔI,ỦI,ỦI,60,7,7
+EXP-011 partial fine-tune,219,TỐT NHẤT LÀ KHÔNG NÊN BIẾT,HIỆN CON,HIỆN CON,62,6,6
+EXP-011 partial fine-tune,255,KHI SƠN TRÊN CÁC MẶT BẰNG PHẲNG,,,75,9,9
+EXP-011 partial fine-tune,263,HỌ ĐÃ PHẢI VAY NHỮNG KHOẢN TIỀN RẤT LỚN,Ô,Ô,80,14,14
+EXP-011 partial fine-tune,294,NGƯ DÂN NGUYỄN VĂN MÙI,MƯƠI MỐT,MƯƠI MỐT,50,6,6
+EXP-011 partial fine-tune,314,CHẢ CÁ QUẾT VỚI THỊT RÙA TƯỢNG TRƯNG CHO PHÚC THỌ,I,I,91,20,20
+EXP-011 partial fine-tune,328,TÔI MỚI DẠM HỎI ÚT ĐÃ CƯỜI BẼN LẼN,,,78,19,19
+EXP-011 partial fine-tune,339,BỘ NGOẠI GIAO TRÂN TRỌNG THÔNG BÁO,,,65,9,9
+EXP-011 partial fine-tune,360,NHỮNG TRIỆU CHỨNG NÀY,,,43,4,4
+EXP-011 partial fine-tune,372,THÌ TỪ CHIẾC GỐI LOÉ LÊN NHỮNG TIA VÀNG SÁNG RỰC,,,93,20,20
+EXP-011 partial fine-tune,382,NGAY CẢ CÁC CƠ QUAN NHÀ NƯỚC NHẬP BÒ THÔNG QUA TRUNG GIAN,,N,121,15,15
+EXP-011 partial fine-tune,556,BẤT CỨ KHI NÀO CHÚNG VÒI VĨNH,,,53,13,13
+EXP-011 partial fine-tune,563,CÚC THÁI,,,35,4,4
+EXP-011 partial fine-tune,585,ĐI QUỆNH QUOẠNG,Ý,Ý,37,8,8
+EXP-011 partial fine-tune,606,CÁC TỈ PHÚ SƯU TẬP DÀ BUÔN ĐỒ CỔ,H,H,70,16,16
+EXP-011 partial fine-tune,757,ĐÃ ĐẾN LÚC ĐỒNG TIỀN PHẢI VỀ VỚI GIÁ TRỊ THỰC CỦA NÓ RỒI,ĐỘNG,ĐỘNG I,78,14,14
+EXP-011 partial fine-tune,762,TÔI THẤY CHUYỆN NÀY BÌNH THƯỜNG MÀ,,,67,7,7
+EXP-011 partial fine-tune,769,CÁC QUỸ ĐẦU TƯ CỦA TRUNG QUỐC ĐANG TUNG TIỀN MUA CỔ PHẦN CÁC HÃNG CÔNG NGHỆ CAO KHẮP THẾ GIỚI,TH,N TH,139,28,28
+EXP-011 partial fine-tune,771,ĐÀI LOAN HÔM QUA THÚC GIỤC MỸ TÔN TRỌNG THỎA THUẬN CUNG CẤP CÁC TÀU NGẦM,TH TH,TH TH,94,28,28
+EXP-011 partial fine-tune,792,QUÁ TUYỆT VỜI VÀ ĐẦY Ý NGHĨA,,,50,13,13
+EXP-011 partial fine-tune,806,BẠN SẼ THẤY ĐẤT NƯỚC NÀY ĐẦY DẪY TRUYỆN TRANH,THẬT,THẬT,92,17,17
+EXP-011 partial fine-tune,885,TUI VẼ CÂY TRÚC MÀ SAO CỨ RA TOÀN CÂY DỪA KHÔNG NÈ,HIỆN CÓ,HIỆN CÓ,70,21,21
+EXP-011 partial fine-tune,888,TRƯỜNG TIỂU HỌC NGUYỄN TRÃI,,,46,7,7
+EXP-011 partial fine-tune,928,KHÔNG KHÍ TRONG LÀNH VÀ YÊN TĨNH KHIẾN LÒNG NHƯ THANH THẢN LẠ,NGƯ,NGƯ,82,18,18
+EXP-011 partial fine-tune,947,CỤ GIÀ RÊN HỪ HỪ,,,48,10,10
+EXP-011 partial fine-tune,1015,BA MƯƠI TÁM BA MƯƠI CHÍN,MƯƠI,MƯƠI,51,6,6
+EXP-011 partial fine-tune,1020,BỐN MƯƠI TÁM BỐN MƯƠI CHÍN,,,46,6,6
+EXP-011 partial fine-tune,1037,TÁM MƯƠI HAI TÁM MƯƠI BA,MƯƠI,MƯƠI,51,6,6
+EXP-011 partial fine-tune,1049,MỘT HAI BA BỐN NĂM,,,53,5,5
+EXP-011 partial fine-tune,1052,MINH TRƯỜNG CŨNG KHÔNG PHẢI NGOẠI LỆ,N,N,48,7,7
+EXP-011 partial fine-tune,1069,CÔ TA KHÁ NỔI TIẾNG TRÊN BÁO CÔNG AN,,,59,9,9
+EXP-011 partial fine-tune,1120,RỒI CÔ SINH CON GÁI TRONG NIỀM HẠNH PHÚC TRÀN TRỀ,R,RẾ,78,14,14
+EXP-011 partial fine-tune,1177,TUY NHIÊN KHI CHO BÉ ĂN THỊT BẠN NÊN CHỌN LOẠI THỊT NẠC,LỘ NHIỀUCH,LỘ NHIỀUCH,82,17,17
+EXP-011 partial fine-tune,1180,ĐÓ CŨNG CHÍNH LÀ NHỮNG ĐIỀU MÀ CÁC ĐỒNG NGHIỆP CẦN Ở BẠN,,N,73,13,13
+EXP-011 partial fine-tune,1186,ĐÓ LÀ SỨC MẠNH TUYỆT VỜI ĐỂ SẢN SINH VÀ TÁI TẠO SỰ SỐNG,QU GIAO,QU GIAO,92,21,21
+EXP-011 partial fine-tune,1223,TỐT HƠN MỘT CHÚT LÀ ĐÁNG MỪNG VÀ CẦN ĐỘNG VIÊN,,,71,13,13
+EXP-011 partial fine-tune,1226,ANH ẤY SẼ GIÚP MU CHƠI TỐT TRONG NHỮNG NĂM TỚI,MƯƠI,MƯƠI,67,12,12
+EXP-011 partial fine-tune,1247,ĐÃ CÓ HAI LUỒNG Ý KIẾN TRÁI NGƯỢC VỀ VIỆC NÀY,LẠI,LẠI,60,15,15
+EXP-011 partial fine-tune,1276,DỄ SỢ NHẤT LÀ ANH TỚI ĐÂU THÌ EM TỚI ĐÓ,SỐNGC NHÂN,SỐNGC NHÂN,59,11,11
+EXP-011 partial fine-tune,1278,VIỆC NÀY XIN NÓI THẬT LÀ CHƯA AI TRỰC TIẾP ĐẶT VẤN ĐỀ CHẠY CHỌT,,,81,17,17
+EXP-011 partial fine-tune,1375,MỤ HAI ĐỨNG ĐÓ ĐỂ ĐÓNG VAI TUỒNG CỦA NGƯỜI THỨ BA,,,84,17,17
