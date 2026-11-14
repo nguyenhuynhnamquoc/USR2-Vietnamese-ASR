@@ -788,7 +788,7 @@ EXP-012 found no evidence that the tested decoding change or impossible CTC alig
 | Random seed | 42 |
 | Output directory | `output/exp013/` |
 
-This is a three-epoch pilot on a fixed 1,000-example subset, not a full pass over all 10,260 training utterances. The script saves `best.pt` based on full-validation WER, `last.pt` with optimizer state for resuming, and per-epoch metrics in `summary.json`.
+This is a three-epoch pilot on a fixed 1,000-example subset, not a full pass over all 10,260 training utterances. The script saves `best.pt` based on full-validation WER, `last.pt` with optimizer state for resuming, per-epoch metrics in `summary.json`, and greedy-decoded train/validation examples in `predictions.csv`. Predictions are generated from `best.pt`; the CSV contains `split`, `dataset_index`, `reference`, and `prediction`. Batch-limit smoke tests only export predictions for the batches they process.
 
 Run from the repository root in PowerShell:
 

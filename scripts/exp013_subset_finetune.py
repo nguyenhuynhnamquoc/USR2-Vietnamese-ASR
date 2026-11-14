@@ -1,4 +1,5 @@
 import argparse
+import csv
 import json
 import random
 import sys
@@ -13,7 +14,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from data.vivos_asr import VIVOSASRDataset
 from models.vietnamese_ctc import load_pretrained_audio_encoder
-from train_asr import make_loader, make_model, run_epoch
+from train_asr import decode_greedy, make_loader, make_model, run_epoch
 
 
 def parse_args():
@@ -50,6 +51,37 @@ def choose_indices(dataset_size, sample_count, seed):
             f"{dataset_size} utterances."
         )
     return sorted(random.Random(seed).sample(range(dataset_size), sample_count))
+
+
+def collect_predictions(model, loader, dataset_indices, tokenizer, device, max_batches):
+    model.eval()
+    predictions = []
+    use_amp = device.type == "cuda"
+
+    with torch.inference_mode():
+        for batch_index, batch in enumerate(loader):
+            if max_batches and batch_index >= max_batches:
+                break
+            audio = batch["audio"].to(device, non_blocking=use_amp)
+            with torch.autocast(
+                device_type=device.type,
+                dtype=torch.float16,
+                enabled=use_amp,
+            ):
+                logits, input_lengths = model(audio, batch["audio_lengths"])
+            hypotheses = decode_greedy(logits, input_lengths, tokenizer)
+            start_index = len(predictions)
+            for offset, (reference, hypothesis) in enumerate(
+                zip(batch["texts"], hypotheses)
+            ):
+                predictions.append(
+                    {
+                        "dataset_index": dataset_indices[start_index + offset],
+                        "reference": reference,
+                        "prediction": hypothesis,
+                    }
+                )
+    return predictions
 
 
 def save_checkpoint(
@@ -95,6 +127,7 @@ def write_history(output_dir, history, train_indices, args, device, best_epoch, 
         "weight_decay": args.weight_decay,
         "best_epoch": best_epoch,
         "best_validation_wer": best_wer,
+        "predictions": str(output_dir / "predictions.csv"),
         "history": history,
     }
     (output_dir / "summary.json").write_text(
@@ -315,6 +348,53 @@ def main():
     )
     print(f"Best checkpoint: {args.output_dir / 'best.pt'}")
     print(f"Latest checkpoint: {args.output_dir / 'last.pt'}")
+
+    best_checkpoint_path = args.output_dir / "best.pt"
+    best_checkpoint = torch.load(
+        best_checkpoint_path,
+        map_location="cpu",
+        weights_only=True,
+    )
+    model.load_state_dict(best_checkpoint["model_state_dict"])
+    del best_checkpoint
+    prediction_train_loader = make_loader(
+        train_subset,
+        args.batch_size,
+        False,
+        args.num_workers,
+        device,
+    )
+    train_predictions = collect_predictions(
+        model,
+        prediction_train_loader,
+        train_indices,
+        tokenizer,
+        device,
+        args.limit_train_batches,
+    )
+    validation_predictions = collect_predictions(
+        model,
+        validation_loader,
+        list(range(len(validation_dataset))),
+        tokenizer,
+        device,
+        args.limit_validation_batches,
+    )
+    predictions_path = args.output_dir / "predictions.csv"
+    with predictions_path.open("w", encoding="utf-8-sig", newline="") as output:
+        writer = csv.DictWriter(
+            output,
+            fieldnames=("split", "dataset_index", "reference", "prediction"),
+        )
+        writer.writeheader()
+        for split, predictions in (
+            ("train", train_predictions),
+            ("validation", validation_predictions),
+        ):
+            for prediction in predictions:
+                writer.writerow({"split": split, **prediction})
+
+    print(f"Saved decoded examples: {predictions_path}")
     print(f"Metrics: {args.output_dir / 'summary.json'}")
 
 
